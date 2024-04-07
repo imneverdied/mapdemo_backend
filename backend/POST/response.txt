@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<response>
+    <records>
+        <region>桃園區</region>
+        <event>滲漏水管</event>
+        <status>待處理</status>
+        <lat>24.9893</lat>
+        <lng>121.2983</lng>
+    </records>
+</response>

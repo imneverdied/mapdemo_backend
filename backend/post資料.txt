@@ -1,0 +1,7 @@
+<root>
+    <area>桃園區</area>
+    <type>滲漏水管</type>
+    <status>待處理</status>
+    <time1>2024/04/03</time1>
+    <time2>2024/04/03</time2>
+</root>

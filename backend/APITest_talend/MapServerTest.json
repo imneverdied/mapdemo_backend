@@ -1,0 +1,545 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "05e3c646-4f9f-4c40-a5e1-7bcc2c0969e2",
+        "name": "MapServerTest"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Scenario",
+            "description": "",
+            "id": "5242305c-b680-4d8b-a7ab-038b869fac64",
+            "name": "Scenario 1"
+          },
+          "children": [
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": [
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "address",
+                        "value": "桃園市桃園區延平路147號"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "returnType",
+                        "value": "xml"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "account",
+                        "value": "tycgmis"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "coordinate",
+                        "value": "TWD97"
+                      }
+                    ]
+                  },
+                  "bodyType": "Text",
+                  "textBody": "<root>\n    <area>桃園區</area>\n    <type>滲漏水管</type>\n    <status>待處理</status>\n    <time1>2024/04/03</time1>\n    <time2>2024/04/03</time2>\n</root>"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "localhost:8081",
+                  "path": "/"
+                },
+                "id": "73b830de-2e71-4be5-a566-76d7a4135739",
+                "name": "MapServerTest1",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/xml"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": [
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "address",
+                        "value": "桃園市桃園區延平路147號"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "returnType",
+                        "value": "xml"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "account",
+                        "value": "tycgmis"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "coordinate",
+                        "value": "TWD97"
+                      }
+                    ]
+                  },
+                  "bodyType": "Text",
+                  "textBody": "<root>\n    <area>中壢區</area>\n    <type>狗狗走失</type>  \n    <status>處理中</status>\n    <time1>2024/04/03</time1>\n    <time2>2024/04/03</time2>\n</root>"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "localhost:8081",
+                  "path": "/"
+                },
+                "id": "04f269c6-c7e8-4de7-9d52-ef8487189eda",
+                "name": "MapServerTest2",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/xml"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": [
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "address",
+                        "value": "桃園市桃園區延平路147號"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "returnType",
+                        "value": "xml"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "account",
+                        "value": "tycgmis"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "coordinate",
+                        "value": "TWD97"
+                      }
+                    ]
+                  },
+                  "bodyType": "Text",
+                  "textBody": "<root>\n    <area>龜山區</area>\n    <type>停電通知</type>  \n    <status>處理完成</status>\n    <time1>2024/04/03</time1>\n    <time2>2024/04/03</time2>\n</root>"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "localhost:8081",
+                  "path": "/"
+                },
+                "id": "a2864063-0c47-4188-9cd2-4ea4d70b0162",
+                "name": "MapServerTest3",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/xml"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": [
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "address",
+                        "value": "桃園市桃園區延平路147號"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "returnType",
+                        "value": "xml"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "account",
+                        "value": "tycgmis"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "coordinate",
+                        "value": "TWD97"
+                      }
+                    ]
+                  },
+                  "bodyType": "Text",
+                  "textBody": "<root>\n    <area>桃園區</area>\n    <type>手機沒電了</type>  \n    <status>待處理</status>\n    <time1>2024/04/03</time1>\n    <time2>2024/04/03</time2>\n</root>"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "localhost:8081",
+                  "path": "/"
+                },
+                "id": "9ce99d7d-7fb3-4ca8-85a0-43fe662acf8e",
+                "name": "MapServerTest4",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/xml"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": [
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "address",
+                        "value": "桃園市桃園區延平路147號"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "returnType",
+                        "value": "xml"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "account",
+                        "value": "tycgmis"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "coordinate",
+                        "value": "TWD97"
+                      }
+                    ]
+                  },
+                  "bodyType": "Text",
+                  "textBody": "<root>\n    <area>龜山區</area>\n    <type>路面坑洞</type>  \n    <status>處理中</status>\n    <time1>2024/04/03</time1>\n    <time2>2024/04/03</time2>\n</root>"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "localhost:8081",
+                  "path": "/"
+                },
+                "id": "2fe446f1-beba-4811-bbaa-0a17af169f1d",
+                "name": "MapServerTest5",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/xml"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": [
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "address",
+                        "value": "桃園市桃園區延平路147號"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "returnType",
+                        "value": "xml"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "account",
+                        "value": "tycgmis"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "coordinate",
+                        "value": "TWD97"
+                      }
+                    ]
+                  },
+                  "bodyType": "Text",
+                  "textBody": "<root>\n    <area>龜山區</area>\n    <type>沒有</type>  \n    <status>處理中</status>\n    <time1>2024/04/03</time1>\n    <time2>2024/04/03</time2>\n</root>"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "localhost:8081",
+                  "path": "/"
+                },
+                "id": "ba5defef-0966-4063-93d3-56b2d1c7f75a",
+                "name": "MapServerTestNOdata",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/xml"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": [
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "address",
+                        "value": "桃園市桃園區延平路147號"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "returnType",
+                        "value": "xml"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "account",
+                        "value": "tycgmis"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "coordinate",
+                        "value": "TWD97"
+                      }
+                    ]
+                  },
+                  "bodyType": "Text",
+                  "textBody": "<root>\n    <area>--</area>\n    <type>--</type>  \n    <status>--</status>\n    <time1>--</time1>\n    <time2>--</time2>\n</root>"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "localhost:8081",
+                  "path": "/"
+                },
+                "id": "9c69bc53-dd5e-48c5-ad56-30df74c53af3",
+                "name": "MapServerTestNERROR",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/xml"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": [
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "address",
+                        "value": "桃園市桃園區延平路147號"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "returnType",
+                        "value": "xml"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "account",
+                        "value": "tycgmis"
+                      },
+                      {
+                        "enabled": true,
+                        "type": "Text",
+                        "name": "coordinate",
+                        "value": "TWD97"
+                      }
+                    ]
+                  },
+                  "bodyType": "Text",
+                  "textBody": "<root>\n    <area>龜山區</area>\n    <type>沒有</type>  \n    <status>處理中</status>\n    <time1>2024/04/03</time1>\n    <time2>2024/04/03</time2>\n</root>"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "localhost:8082",
+                  "path": "/"
+                },
+                "description": "",
+                "id": "d6db6ce3-8cb5-4cc6-9c9a-1e82592174c3",
+                "name": "MapServerTest8082",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/xml"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
