@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+<response>
+    <records>
+        <region>中壢區</region>
+        <event>狗狗走失</event>
+        <status>處理中</status>
+        <lat>24.9625</lat>
+        <lng>121.2164</lng>
+    </records>
+    <records>
+        <region>龜山區</region>
+        <event>路面坑洞</event>
+        <status>處理中</status>
+        <lat>24.9956</lat>
+        <lng>121.3448</lng>
+    </records>
+</response>
