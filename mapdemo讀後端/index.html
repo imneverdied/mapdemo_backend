@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenStreetMap Events Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/css/leaflet-color-markers.css" />
+     </head>
+	 <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        width: 100%;
+        height: calc(
+          100% - 50px
+        ); /* 地圖高度減去50px，使得篩選器的高度為50px */
+      }
+
+      .filters {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        padding: 10px;
+        box-sizing: border-box;
+        z-index: 1000; /* 確保篩選器位於最上層 */
+      }
+    </style>
+  <body>
+    <div class="filters">
+      <label for="status">區域:</label>
+      <select id="region">
+        <option value="">全區</option>
+      </select>
+      <label for="status">議題:</label>
+      <select id="event">
+        <option value="">全部議題</option>
+      </select>
+
+      <label for="status">處理狀況:</label>
+      <select id="status">
+        <option value="">全部狀況</option>
+        <option value="待處理">待處理</option>
+        <option value="處理中">處理中</option>
+        <option value="處理完成">處理完成</option>
+      </select>
+
+      <label for="date">建立時間:</label>
+      <input type="date" id="startDate" />
+      <input type="date" id="endDate" />
+
+      <label for="date">更新時間:</label>
+      <input type="date" id="startDate" />
+      <input type="date" id="endDate" />
+      
+      <br />
+      <label>
+        可根據excel內資料顯示事件範圍不限(桃園->台灣->全球) </label
+      >
+      <a href=" https://github.com/imneverdied/mapdemo/blob/main/README.md">詳細說明點這</a>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xmldom/0.3.0/xmldom-alpha07-iescript.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
